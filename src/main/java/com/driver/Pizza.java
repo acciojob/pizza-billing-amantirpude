@@ -30,7 +30,6 @@ public class Pizza {
         // your code goes here
         if(!cheese){
             price = price + 80;
-            System.out.println("Extra Cheese Added: 80");
             cheese = true;
         }
     }
@@ -40,11 +39,9 @@ public class Pizza {
         if(!toppings){
             if(isVeg){
                 price = price + 70;
-                System.out.println("Extra Toppings Added: 70");
             }
             else{
                 price = price + 120;
-                System.out.println("Extra Toppings Added: 120");
             }
             toppings = true;
         }
@@ -54,13 +51,22 @@ public class Pizza {
         // your code goes here
         if(!takeAway){
             price = price + 20;
-            System.out.println("Paperbag Added: 20");
             takeAway = true;
         }
     }
 
     public String getBill(){
         // your code goes here
+        if(cheese)
+            System.out.println("Extra Cheese Added: 80");
+        if(toppings){
+            if(isVeg)
+                System.out.println("Extra Toppings Added: 70");
+            else
+                System.out.println("Extra Toppings Added: 120");
+        }
+        if(takeAway)
+            System.out.println("Paperbag Added: 20");
         bill = "Total Price: " + price;
         return this.bill;
     }
