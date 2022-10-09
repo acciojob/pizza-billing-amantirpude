@@ -12,10 +12,14 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
-        if(isVeg)
+        if(isVeg){
             price = price + 300;
-        else
+            System.out.println("Base Price Of The Pizza :" + price);
+        }
+        else{
             price = price + 400;
+            System.out.println("Base Price Of The Pizza :" + price);
+        }
     }
 
     public int getPrice(){
@@ -26,6 +30,7 @@ public class Pizza {
         // your code goes here
         if(!cheese){
             price = price + 80;
+            System.out.prinln("Extra Cheese Added: 80");
             cheese = true;
         }
     }
@@ -33,10 +38,14 @@ public class Pizza {
     public void addExtraToppings(){
         // your code goes here
         if(!toppings){
-            if(isVeg)
+            if(isVeg){
                 price = price + 70;
-            else
+                System.out.println("Extra Toppings Added: 70");
+            }
+            else{
                 price = price + 120;
+                System.out.println("Extra Toppings Added: 120");
+            }
             toppings = true;
         }
     }
@@ -45,12 +54,14 @@ public class Pizza {
         // your code goes here
         if(!takeAway){
             price = price + 20;
+            System.out.println("Paperbag Added: 20");
             takeAway = true;
         }
     }
 
     public String getBill(){
         // your code goes here
+        System.out.println("Total Price: " + Price);
         return this.bill;
     }
 }
