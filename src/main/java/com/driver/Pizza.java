@@ -30,7 +30,7 @@ public class Pizza {
         // your code goes here
         if(!cheese){
             price = price + 80;
-            System.out.prinln("Extra Cheese Added: 80");
+            System.out.println("Extra Cheese Added: 80");
             cheese = true;
         }
     }
@@ -61,7 +61,7 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        System.out.println("Total Price: " + Price);
+        bill = "Total Price: " + price;
         return this.bill;
     }
 }
