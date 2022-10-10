@@ -18,7 +18,7 @@ public class Pizza {
         else{
             price = price + 400;
         }
-        bill = "Base Price Of The Pizza :" + price + "\n";
+        bill = "Base Price Of The Pizza: " + price + "\n";
     }
 
     public int getPrice(){
