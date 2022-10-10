@@ -14,11 +14,11 @@ public class Pizza {
         // your code goes here
         if(isVeg){
             price = price + 300;
-            System.out.println("Base Price Of The Pizza :" + price);
+            bill = bill + "Base Price Of The Pizza :" + price + "\n";
         }
         else{
             price = price + 400;
-            System.out.println("Base Price Of The Pizza :" + price);
+            bill = bill + "Base Price Of The Pizza :" + price + "\n";
         }
     }
 
