@@ -14,12 +14,11 @@ public class Pizza {
         // your code goes here
         if(isVeg){
             price = price + 300;
-            bill = bill + "Base Price Of The Pizza :" + price + "\n";
         }
         else{
             price = price + 400;
-            bill = bill + "Base Price Of The Pizza :" + price + "\n";
         }
+        bill = "Base Price Of The Pizza :" + price + "\n";
     }
 
     public int getPrice(){
