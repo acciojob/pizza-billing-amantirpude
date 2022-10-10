@@ -58,15 +58,15 @@ public class Pizza {
     public String getBill(){
         // your code goes here
         if(cheese)
-            System.out.println("Extra Cheese Added: 80");
+            System.out.println("Extra Cheese Added: " + 80);
         if(toppings){
             if(isVeg)
-                System.out.println("Extra Toppings Added: 70");
+                System.out.println("Extra Toppings Added: " + 70);
             else
-                System.out.println("Extra Toppings Added: 120");
+                System.out.println("Extra Toppings Added: " + 120);
         }
         if(takeAway)
-            System.out.println("Paperbag Added: 20");
+            System.out.println("Paperbag Added: "+ 20);
         bill = "Total Price: " + price;
         return this.bill;
     }
