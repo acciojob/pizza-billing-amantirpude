@@ -14,12 +14,13 @@ public class Pizza {
     private int extraToppingsPrice;
 
     private int basePrice;
-    private int takeAwayPrice = 20;
-    private boolean isBillGenerated;
+    private int takeAwayPrice;
+    private boolean isBillGenerated = false;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         this.extraCheesePrice = 80;
+        this.takeAwayPrice = 20;
         // your code goes here
         if(isVeg){
             this.extraToppingsPrice = 70;
