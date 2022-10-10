@@ -64,19 +64,21 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        if(this.isBillGenerated == false) {
-            if (this.isCheese)
-                this.bill = this.bill + "Extra Cheese Added: " + this.extraCheesePrice + "\n";
-            if (this.isToppings) {
-                this.bill = this.bill + "Extra Toppings Added: " + this.extraToppingsPrice + "\n";
-            }
-            if (this.isTakeAway)
-                this.bill = this.bill + "Paperbag Added: " + this.takeAwayPrice + "\n";
-            this.bill = this.bill + "Total Price: " + this.price + "\n";
-            this.isBillGenerated = true;
+        if(this.isCheese)
+            this.bill = this.bill + "Extra Cheese Added: " + this.extraCheesePrice + "\n";
+        if(this.isToppings){
+            this.bill = this.bill + "Extra Toppings Added: " + this.extraToppingsPrice + "\n";
+        }
+        if(this.isTakeAway)
+            this.bill = this.bill + "Paperbag Added: "+ this.takeAwayPrice + "\n";
+        this.bill = this.bill + "Total Price: " + this.price + "\n";
+
+        if(isBillGenerated == false) {
+            isBillGenerated = true;
             return this.bill;
         }
-        else
+        else{
             return "";
+        }
     }
 }
