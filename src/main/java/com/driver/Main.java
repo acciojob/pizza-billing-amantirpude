@@ -7,15 +7,12 @@ public class Main {
     dp.addTakeaway();
     dp.addExtraCheese();
     dp.addTakeaway();
-    dp.addExtraCheese();
-    dp.addExtraToppings();
-    dp.addExtraCheese();
     System.out.println(dp.getBill());
 
     Pizza p = new Pizza(true);
     p.addExtraCheese();
     p.addExtraToppings();
-    p.getBill();
+    p.addTakeaway();
     System.out.println(p.getBill());
   }
 }
